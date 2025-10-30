@@ -1,0 +1,18 @@
+# 忽略 Python 暫存檔
+__pycache__/
+*.pyc
+
+# 忽略 Colab 暫存檔
+.ipynb_checkpoints/
+
+# 忽略「大腦」和「進度」 (這些要用 Releases 發布)
+*.pth
+
+# 忽略「影片」和「圖檔」 (這些建議上傳到 LFS 或其他地方)
+# 我們先把 .png 和 .gif 拿掉，這樣你才能上傳你的「證據」
+*.mp4
+# *.gif
+# *.png
+
+# 忽略 Google Drive 掛載資料夾 (千萬別上傳)
+Colab_AI_Snake/
