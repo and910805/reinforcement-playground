@@ -20,16 +20,31 @@
 ```bash
 reinforcement-playground/
 │
-├── README.md              # 🎡 遊樂園「大廳」(你現在所在的地方)
-├── .gitignore             # 🧹 忽略暫存檔與模型
+├── .gitignore
 │
-└── projects/              # 各個展館 (子專案)
-    ├── 01-snake-ddqn/     # 🐍 貪吃蛇強化學習
-    │   ├── snake_game.py
-    │   ├── model.py
-    │   ├── agent.py
-    │   ├── train.py
-    │   ├── play.py
-    │   └── README.md
+├── README.md           # ⭐️ 遊樂園大廳 (Lobby)
+│
+└── projects/
     │
-    └── 02-mouse-maze/     # 🐭 老鼠走迷宮 (Coming Soon)
+    └── 01-snake/       # 🐍 貪吃蛇「展館」
+        │
+        ├── README.md   # ⭐️⭐️⭐️ 這是最重要的「A/B 比較報告」！
+        │
+        ├── dqn_baseline/     # 展區 A: 基準版 (舊的DQN)
+        │   │
+        │   ├── snake_game.py   # (步驟 3 程式碼)
+        │   ├── model.py        # (步驟 4 程式碼)
+        │   ├── agent.py        # (步驟 4 程式碼)
+        │   ├── train.py        # (步驟 5 修正版 - 存檔在 dqn.pth)
+        │   ├── play.py         # (步驟 7 修正版 - 讀取 dqn.pth)
+        │   └── requirements.txt
+        │
+        └── ddqn_upgrade/     # 展區 B: 升級版 (新的DDQN)
+            │
+            ├── snake_game.py   # (步驟 3 程式碼)
+            ├── model.py        # (步驟 4 DDQN 升級版)
+            ├── agent.py        # (步驟 4 DDQN 升級版)
+            ├── train.py        # (步驟 5 DDQN 升級版)
+            ├── play.py         # (步驟 7 DDQN 升級版)
+            └── requirements.txt
+```
